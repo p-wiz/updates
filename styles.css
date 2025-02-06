@@ -1,0 +1,97 @@
+/* Dark Theme */
+:root {
+    --bg-color: #1e1e1e;
+    --text-color: #d4d4d4;
+    --accent-color: #3a3a3a;
+    --highlight-color: #007acc;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--accent-color);
+    padding: 15px 20px;
+}
+
+p {
+  padding: 15px 25px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.contact-btn {
+    background: var(--highlight-color);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #005f99;
+}
+
+/* Table */
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: var(--accent-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: var(--highlight-color);
+}
+
+tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+tr:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none; /* Optional: removes the underline */
+}
+
+.rounded-btn {
+    color: white;
+    text-decoration: none;
+    background: var(--highlight-color);
+    padding: 4px 6px;
+    border-radius: 5px;
+    font-size: 12px;
+    display: inline-block; /* Ensures they stay next to each other */
+    text-align: center;
+    margin: 5px; /* Adds space between buttons */
+    transition: 0.3s;
+}
+
+.rounded-btn:hover {
+    background: #005f99;
+    color: #fff;
+}
